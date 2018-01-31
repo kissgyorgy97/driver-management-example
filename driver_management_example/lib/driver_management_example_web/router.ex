@@ -2,7 +2,7 @@ defmodule DriverManagementExampleWeb.Router do
   use DriverManagementExampleWeb, :router
 
   pipeline :browser do
-    plug :accepts, ["html"]
+    plug :accepts, ["json"]
     plug :fetch_session
     plug :fetch_flash
     plug :protect_from_forgery
