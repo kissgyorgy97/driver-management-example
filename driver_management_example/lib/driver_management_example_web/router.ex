@@ -21,7 +21,7 @@ defmodule DriverManagementExampleWeb.Router do
     resources "/drivers", DriverController
   end
 
-  scope "/", DriverManagementExample do
+  scope "/", DriverManagementExampleWeb do
     pipe_through :api
     get "/", DriverController, :index
   get "/:id", DriverController, :show
