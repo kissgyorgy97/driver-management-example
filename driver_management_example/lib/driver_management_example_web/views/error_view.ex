@@ -5,7 +5,7 @@ defmodule DriverManagementExampleWeb.ErrorView do
     "Page not found"
   end
 
-  def render("422.json", _assigns) do
+  def render("422.html", _assigns) do
     %{errors: %{detail: "Bad request"}}
   end
 
